@@ -17,6 +17,6 @@ jobs:
          MIDDLE_NAME: Costa
        run: echo $MY_VAR $FIRST_NAME $MIDDLE_NAME
      - name: my step 2
-       if: sucess()
+       if: success()
        run: echo " the previous step has finished successfully"
     
