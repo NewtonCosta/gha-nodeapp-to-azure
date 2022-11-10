@@ -19,4 +19,9 @@ jobs:
      - name: my step 2
        if: success()
        run: echo " the previous step has finished successfully"
+     - name: my step 3
+       uses: actions/checkout@v1
+       with:
+        node-version: 12
+        registry-url: https://npm.pkg.github.com/
     
