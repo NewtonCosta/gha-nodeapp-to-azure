@@ -15,5 +15,5 @@ jobs:
          MY_VAR: Hi there!
          FIRST_NAME: Newton
          MIDDLE_NAME: Costa
-       run: ehco $MY_VAR $FIRST_NAME $MIDDLE_NAME
+       run: echo $MY_VAR $FIRST_NAME $MIDDLE_NAME
     
