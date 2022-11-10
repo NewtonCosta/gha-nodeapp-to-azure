@@ -1,9 +1,9 @@
 on:
-  pull_request:
+  push:
     branches:
       - master
 
-jobs:
+jobs: 
   example_matrix:
     strategy:
       matrix:
