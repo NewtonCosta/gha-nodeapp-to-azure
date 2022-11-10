@@ -8,12 +8,15 @@ jobs:
     strategy:
       matrix:
         os: [ubuntu-latest]
-        node: [12, 14]      
+        node: [12]      
     steps:
-     - name: my step
+     - name: my step 1
        env: 
          MY_VAR: Hi there!
          FIRST_NAME: Newton
          MIDDLE_NAME: Costa
        run: echo $MY_VAR $FIRST_NAME $MIDDLE_NAME
+     - name: my step 2
+       if: sucess()
+       run: echo " the previous step has finished successfully"
     
