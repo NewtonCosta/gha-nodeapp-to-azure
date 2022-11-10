@@ -7,16 +7,13 @@ jobs:
     runs-on: ${{ matrix.os }}
     strategy:
       matrix:
-        os: [macos-latest, windows-latest, ubuntu-latest]
-        node: [10, 12, 14]
-        exclude:
-          - os: macos-latest
-            node: 10
+        os: [ubuntu-latest]
+        node: [12, 14]      
     steps:
      - name: my step
        env: 
-        MY_VAR: Hi there!
-        FIRST_NAME: Newton
-        MIDDLE_NAME: Costa
+         MY_VAR: Hi there!
+         FIRST_NAME: Newton
+         MIDDLE_NAME: Costa
        run: ehco $MY_VAR $FIRST_NAME $MIDDLE_NAME
     
