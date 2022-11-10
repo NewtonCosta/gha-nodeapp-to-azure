@@ -24,4 +24,11 @@ jobs:
        with:
         node-version: 12
         registry-url: https://npm.pkg.github.com/
+     - name: my step 4
+       uses: actions/first-interaction@v1
+       with:
+        repo-token: ${{ secrets.GITHUB.TOKEN }}
+        issue-message: 'Essage that will display on users first issue'
+        pr-message: 'message that will be displayed on users first pr'
+        
     
